@@ -16,7 +16,7 @@ def llamarServicioSet():
         'accion': accion
     }
     return jsonify(salida)
-
+#para remote
 def inicializarVariables(user, password):
     userLocal = "dcaballero"
     passLocal = "unida123"
@@ -25,7 +25,7 @@ def inicializarVariables(user, password):
     
     try:
         print("Verificar login")
-        
+
         if password == passLocal and user == userLocal:
             print("Usuario y contraseña OK")
             accion = "Success"
